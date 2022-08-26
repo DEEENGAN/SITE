@@ -86,6 +86,7 @@ body {
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   text-orientation: upright;
+  margin-bottom: 2.9em;
 }
 .short_container {
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -133,6 +134,9 @@ body {
   margin-right: -1em;
   margin-bottom: 1em;
   padding-left: 20px;
+}
+.sway_container a:link {
+  text-decoration: none;
 }
 /* ABOUT PAGE */
 .about_page_container {
