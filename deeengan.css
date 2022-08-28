@@ -98,9 +98,8 @@ body {
           writing-mode: vertical-rl;
   text-orientation: upright;
   margin-right: -1em;
-  margin-bottom: 1em;
 }
-.long_container {
+.bark_container {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 6em;
   font-weight: normal;
@@ -112,7 +111,7 @@ body {
   margin-right: -1em;
   margin-bottom: 1em;
 }
-.beat_container {
+.tune_container {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 6em;
   font-weight: normal;
@@ -122,7 +121,6 @@ body {
           writing-mode: vertical-rl;
   text-orientation: upright;
   margin-right: -1em;
-  margin-bottom: 1em;
 }
 .sway_container {
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -177,6 +175,54 @@ body {
   margin-right: -4em;
   -webkit-column-width: 65ch;
           column-width: 65ch;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+      hyphens: auto;
+}
+/* PITH PAGE */
+.pith_page_container {
+  width: 50ch;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-right: -6em;
+  -webkit-column-count: 2;
+          column-count: 2;
+}
+.pith_page_title,
+.me_page_body {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.pith_page_title {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 6em;
+  font-weight: normal;
+  color: black;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-orientation: upright;
+  margin-bottom: 0.5em;
+}
+.pith_page_body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-right: -4em;
+  -webkit-column-width: 65ch;
+          column-width: 65ch;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+      hyphens: auto;
 }
 /* KEYFRAMES */
 .paths {
