@@ -98,6 +98,7 @@ body {
           writing-mode: vertical-rl;
   text-orientation: upright;
   margin-right: -1em;
+  margin-bottom: 1em;
 }
 .bark_container {
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -111,7 +112,7 @@ body {
   margin-right: -1em;
   margin-bottom: 1em;
 }
-.tune_container {
+.lilt_container {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 6em;
   font-weight: normal;
@@ -121,6 +122,7 @@ body {
           writing-mode: vertical-rl;
   text-orientation: upright;
   margin-right: -1em;
+  margin-bottom: 1em;
 }
 .sway_container {
   font-family: Georgia, 'Times New Roman', Times, serif;
