@@ -89,7 +89,7 @@ body {
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   text-orientation: upright;
-  margin-bottom: 2.9em;
+  margin-bottom: -3em;
 }
 .pith_container {
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -138,6 +138,7 @@ body {
   text-orientation: upright;
   margin-bottom: -1em;
   margin-right: -1em;
+  padding-left: 20px;
 }
 /* ME PAGE */
 .me_page_container {
@@ -169,7 +170,7 @@ body {
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   text-orientation: upright;
-  margin-bottom: 2.75em;
+  margin-bottom: 0.5em;
 }
 .me_page_body {
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -856,6 +857,11 @@ body {
   }
 }
 /* MOBILE */
+@media only screen and (min-width 0em) {
+  body {
+    font-size: 1vw;
+  }
+}
 /* TABLET */
 /* SMALL DESKTOP */
 /* LARGE DESKTOP */
