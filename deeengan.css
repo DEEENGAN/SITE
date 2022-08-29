@@ -43,6 +43,9 @@ body {
   margin-top: 0.25em;
   margin-right: -0.05em;
 }
+.title a:link {
+  text-decoration: none;
+}
 /* GENERAL TEXT */
 .body_text {
   -webkit-column-count: 2;
@@ -86,7 +89,7 @@ body {
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   text-orientation: upright;
-  margin-bottom: 2.9em;
+  margin-bottom: 0em;
 }
 .pith_container {
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -97,8 +100,8 @@ body {
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   text-orientation: upright;
-  margin-right: -1em;
   margin-bottom: 1em;
+  margin-right: -1em;
 }
 .bark_container {
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -110,7 +113,6 @@ body {
           writing-mode: vertical-rl;
   text-orientation: upright;
   margin-right: -1em;
-  margin-bottom: 1em;
 }
 .lilt_container {
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -133,12 +135,8 @@ body {
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   text-orientation: upright;
+  margin-bottom: -1em;
   margin-right: -1em;
-  margin-bottom: 1em;
-  padding-left: 20px;
-}
-.sway_container a:link {
-  text-decoration: none;
 }
 /* ME PAGE */
 .me_page_container {
