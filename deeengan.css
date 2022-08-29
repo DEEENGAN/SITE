@@ -89,7 +89,7 @@ body {
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   text-orientation: upright;
-  margin-bottom: 0em;
+  margin-bottom: 2.9em;
 }
 .pith_container {
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -100,7 +100,7 @@ body {
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   text-orientation: upright;
-  margin-bottom: 1em;
+  margin-bottom: 0em;
   margin-right: -1em;
 }
 .bark_container {
@@ -113,6 +113,7 @@ body {
           writing-mode: vertical-rl;
   text-orientation: upright;
   margin-right: -1em;
+  margin-bottom: -1em;
 }
 .lilt_container {
   font-family: Georgia, 'Times New Roman', Times, serif;
