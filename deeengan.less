@@ -11,16 +11,48 @@ a {
     padding: 0;
   }
 
-
-  /* GENERAL TEXT */
-  .body_text {
-    -webkit-column-count: 2;
-    column-count: 2;
-    padding-right: 2em;
-    padding-left: 1em;
-    height: 60em;
+  /* GENERAL */
+  
+  .page_container {
+    width: 100ch;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-right: -9vw;
+    -webkit-column-count: 1;
+    column-count: 1;
   }
-  /* CONTAINER FOR THE LINKS */
+
+  .page_title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(240, 198, 198);
+    font-size: 2vw;
+    font-weight: normal;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    margin-top: 20vw;
+  }
+
+  .body_text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(237, 223, 223);
+    margin-right: -30vw;
+    -webkit-column-width: 165ch;
+    column-width: 165ch;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+  }
+
+  /* CONTAINERS FOR THE FRONT PAGE LINKS. THIS IS TO MOVE THE LINKS UP AND DOWN, LEFT AND RIGHT. */
   .container_links {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -110,50 +142,8 @@ a {
     padding-left: 20px;
   }
 
-  /* NAME PAGE */
-  .name_page_container {
-    width: 50ch;
-    height: 500px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    margin-right: -6em;
-    -webkit-column-count: 2;
-    column-count: 2;
-  }
-  .name_page_title,
-  .name_page_body {
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-  }
-  .name_page_title {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 6em;
-    font-weight: normal;
-    color: rgb(240, 198, 198);
-    -webkit-writing-mode: vertical-rl;
-    -ms-writing-mode: tb-rl;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    margin-bottom: 0.5em;
-  }
-  .name_page_body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: rgb(222, 184, 184);
-    margin-right: -4em;
-    -webkit-column-width: 65ch;
-    column-width: 65ch;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
-  }
+
+
   /* PITH PAGE */
   .pith_page_container {
     width: 50ch;
@@ -170,14 +160,14 @@ a {
     column-count: 2;
   }
   .pith_page_title,
-  .name_page_body {
+  .body_text {
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
   }
   .pith_page_title {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 6em;
+    font-size: 6vw;
     font-weight: normal;
     color: black;
     -webkit-writing-mode: vertical-rl;
@@ -3977,12 +3967,76 @@ a {
 
 
   /* MOBILE */
-  @media only screen and (max-width: 600px) {
+
+  @media only screen and (max-width: 599px) {
+    body {
+      font-size: clamp(1vw, 2vw, 3vw);
+    }
+    .body_text {
+      font-size: clamp(6vw, 6vw, 9vw);
+      padding: -150px;
+        }
+        
+    .page_title {
+      font-size: clamp(30vw, 12vw, 9vw);
+      margin-right: 40px;
+        }
+
+  }
+
+    /* TABLET */
+
+  @media only screen and (min-width: 600px) {
+    body {
+      font-size: clamp(1vw, 2vw, 3vw);
+    }
+    .body_text {
+      font-size: clamp(6vw, 6vw, 9vw);
+      padding: -150px;
+        }
+        
+    .page_title {
+      font-size: clamp(30vw, 12vw, 9vw);
+      margin-right: 40px;
+        }
+        .name_page_container {
+          margin-right: -6vw;
+        }
+        
+  }
+
+ @media only screen and (min-width: 900px) {
     body {
       font-size: 2vw;
     }
+    .name_page_container {
+      margin-right: -6vw;
+    }
   }
-  /* TABLET */
+
   /* SMALL DESKTOP */
-  /* LARGE DESKTOP */
+
+  @media only screen and (min-width: 1200px) {
+    body {
+      font-size: 2vw;
+    }
+
+    .name_page_container {
+      margin-right: -6vw;
+    }
+
+  }
+
+ /* LARGE DESKTOP */
+
+  @media only screen and (min-width: 1800px) {
+    body {
+      font-size: 2vw;
+    }
+
+    .name_page_container {
+      margin-right: -3vw;
+    }
+  }
+
   
