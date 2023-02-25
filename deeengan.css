@@ -1,18 +1,30 @@
 /*-- -------------------------- -->
 <---       DEEENGAN BANNER       -->
 <--- -------------------------- -*/
+/* THINGS: 
+
+TO DO:
+
+Maybe dotted text? 
+smart quote
+indents
+wrap text around bottom of the side banner
+
+
+TO REMEMBER:
+
+Inpsect element > box model > look at where thing are in relation to flex
+
+*/
 /* BODY RELATED STUFF */
 a {
   color: inherit;
 }
 body {
   background: #000000;
-  margin: 0;
-  padding: 0;
 }
 /* GENERAL */
 .page_container {
-  width: 100ch;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,165 +32,91 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-right: -9vw;
   -webkit-column-count: 1;
   column-count: 1;
 }
+.firstcharacter {
+  float: left;
+  line-height: 18.75vw;
+  padding-right: 2.5vw;
+  padding-left: 1vw;
+}
 .page_title {
   font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: clamp(5rem, 15vw, 600rem);
+  /* controls the size of the page titles */
   color: #f0c6c6;
-  font-size: 2vw;
-  font-weight: normal;
   -webkit-writing-mode: vertical-rl;
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
   text-orientation: upright;
-  margin-top: 20vw;
+  /* margin: 0 auto;  this is to fix everything together; title is above the text in NAME, for instance, affects everything below? 
+  height: max-content; */
 }
 .body_text {
   font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: clamp(1rem, 3vw, 5rem);
+  /* controls the size of the page body text; https://developer.mozilla.org/en-US/docs/Web/CSS/clamp as a reference */
+  text-align: justify;
   color: #eddfdf;
-  margin-right: -30vw;
-  -webkit-column-width: 165ch;
-  column-width: 165ch;
   word-wrap: break-word;
   overflow-wrap: break-word;
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto;
+  content: "";
+  display: inline-block;
+  padding-right: 2vw;
+  padding-left: 2vw;
+}
+.ti {
+  text-indent: 3vw;
 }
 /* CONTAINERS FOR THE FRONT PAGE LINKS. THIS IS TO MOVE THE LINKS UP AND DOWN, LEFT AND RIGHT. */
 .container_links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-column-count: 5;
-  column-count: 5;
-  margin-right: -5em;
-  -webkit-column-gap: 0.25em;
-  column-gap: 0.25em;
+  -webkit-column-count: 6;
+  column-count: 6;
+  -webkit-column-gap: 1vw;
+  column-gap: 1vw;
+  max-width: 6px;
+  /* this is to constraint the columns */
 }
-.name_container {
+.front {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 6em;
-  font-weight: normal;
-  color: black;
+  font-size: clamp(1vw, 11vw, 600vw);
   -webkit-writing-mode: vertical-rl;
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
   text-orientation: upright;
-  margin-bottom: -3em;
-  margin-left: 1em;
-}
-.pith_container {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 6em;
-  font-weight: normal;
+  margin: 0 auto;
   color: black;
-  -webkit-writing-mode: vertical-rl;
-  -ms-writing-mode: tb-rl;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  margin-bottom: 0em;
-  margin-right: -1em;
 }
-.bark_container {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 6em;
-  font-weight: normal;
-  color: black;
-  -webkit-writing-mode: vertical-rl;
-  -ms-writing-mode: tb-rl;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  margin-right: -1em;
-  margin-bottom: -2em;
+.fname {
+  margin-bottom: -10vw;
+  /* bigger negatives go down */
+  margin-left: 1vw;
 }
-.lilt_container {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 6em;
-  font-weight: normal;
-  color: black;
-  -webkit-writing-mode: vertical-rl;
-  -ms-writing-mode: tb-rl;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  margin-right: -1em;
-  margin-bottom: 1em;
+.fpith {
+  margin-bottom: -1vw;
+  margin-left: 1vw;
 }
-.sway_container {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 6em;
-  font-weight: normal;
-  color: black;
-  -webkit-writing-mode: vertical-rl;
-  -ms-writing-mode: tb-rl;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  margin-bottom: -3em;
-  margin-right: -1em;
+.fbark {
+  margin-bottom: -9vw;
+  margin-left: 1vw;
 }
-.here_container {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 6em;
-  font-weight: normal;
-  color: black;
-  -webkit-writing-mode: vertical-rl;
-  -ms-writing-mode: tb-rl;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  margin-bottom: -1em;
-  margin-right: -1em;
-  padding-left: 20px;
+.flilt {
+  margin-bottom: -4vw;
+  margin-left: 1vw;
 }
-/* PITH PAGE */
-.pith_page_container {
-  width: 50ch;
-  height: 500px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin-right: -6em;
-  -webkit-column-count: 2;
-  column-count: 2;
+/* NO .fsway, can add later */
+.fhere {
+  margin-bottom: -9vw;
+  margin-left: 1vw;
 }
-.pith_page_title,
-.body_text {
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-.pith_page_title {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 6vw;
-  font-weight: normal;
-  color: black;
-  -webkit-writing-mode: vertical-rl;
-  -ms-writing-mode: tb-rl;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  margin-bottom: 0.5em;
-}
-.pith_page_body {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  margin-right: -4em;
-  -webkit-column-width: 65ch;
-  column-width: 65ch;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
-}
-/* KEYFRAMES */
+/* KEYFRAMES KEYFRAMES KEYFRAMES KEYFRAMES KEYFRAMES KEYFRAMES KEYFRAMES KEYFRAMES KEYFRAMES KEYFRAMES KEYFRAMES KEYFRAMES */
 .paths {
   -webkit-animation: paths 12s step-end infinite;
   animation: paths 12s step-end infinite;
@@ -3951,62 +3889,5 @@ body {
     opacity: 0;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
-  }
-}
-/* MOBILE */
-@media only screen and (max-width: 599px) {
-  body {
-    font-size: clamp(1vw, 2vw, 3vw);
-  }
-  .body_text {
-    font-size: clamp(6vw, 6vw, 9vw);
-    padding: -150px;
-  }
-  .page_title {
-    font-size: clamp(30vw, 12vw, 9vw);
-    margin-right: 40px;
-  }
-}
-/* TABLET */
-@media only screen and (min-width: 600px) {
-  body {
-    font-size: clamp(1vw, 2vw, 3vw);
-  }
-  .body_text {
-    font-size: clamp(6vw, 6vw, 9vw);
-    padding: -150px;
-  }
-  .page_title {
-    font-size: clamp(30vw, 12vw, 9vw);
-    margin-right: 40px;
-  }
-  .page_container {
-    margin-right: -6vw;
-  }
-}
-@media only screen and (min-width: 900px) {
-  body {
-    font-size: 2vw;
-  }
-  .page_container {
-    margin-right: -6vw;
-  }
-}
-/* SMALL DESKTOP */
-@media only screen and (min-width: 1200px) {
-  body {
-    font-size: 2vw;
-  }
-  .page_container {
-    margin-right: -6vw;
-  }
-}
-/* LARGE DESKTOP */
-@media only screen and (min-width: 1800px) {
-  body {
-    font-size: 2vw;
-  }
-  .page_container {
-    margin-right: -3vw;
   }
 }
