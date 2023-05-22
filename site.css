@@ -1,56 +1,13 @@
-/*-- -------------------------- -->
-<---      BANNER       -->
-<--- -------------------------- -*/
-/* THINGS: 
-
-
-
-TO REMEMBER:
-
-Inpsect element > box model > look at where thing are in relation to flex
-
-*/
-/* BODY RELATED STUFF */
+/* <-- BANNER --> */
 a {
   color: inherit;
 }
 body {
   background: #000000;
 }
-/* GENERAL */
-.page_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-column-count: 1;
-  column-count: 1;
-}
-.firstcharacter {
-  float: left;
-  line-height: 18.75vw;
-  padding-right: 2.5vw;
-  padding-left: 1vw;
-}
-.page_title {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: clamp(5rem, 15vw, 600rem);
-  /* controls the size of the page titles */
-  color: #f0c6c6;
-  -webkit-writing-mode: vertical-rl;
-  -ms-writing-mode: tb-rl;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  /* margin: 0 auto;  this is to fix everything together; title is above the text in NAME, for instance, affects everything below? 
-  height: max-content; */
-}
 .body_text {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: clamp(1rem, 3vw, 5rem);
-  /* controls the size of the page body text; https://developer.mozilla.org/en-US/docs/Web/CSS/clamp as a reference */
   text-align: justify;
   color: #eddfdf;
   word-wrap: break-word;
@@ -63,54 +20,53 @@ body {
   padding-right: 2vw;
   padding-left: 2vw;
 }
-.ti {
-  text-indent: 3vw;
-}
-/* CONTAINERS FOR THE FRONT PAGE LINKS. THIS IS TO MOVE THE LINKS UP AND DOWN, LEFT AND RIGHT. */
-.container_links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-column-count: 6;
-  column-count: 6;
-  -webkit-column-gap: 1vw;
-  column-gap: 1vw;
-  max-width: 6px;
-  /* this is to constraint the columns */
-}
-.front {
+.firstcharacter {
+  float: left;
+  line-height: 18.75vw;
+  padding-right: 2.5vw;
+  padding-left: 1vw;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: clamp(1vw, 11vw, 600vw);
+  font-size: clamp(10vw, 15.5vw, 600vw);
+  -webkit-writing-mode: vertical-lr;
+  -ms-writing-mode: tb-lr;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  color: #000000;
+  /* height: max-content */
+}
+.firstcharacter-rtl {
+  font-family: Noto Sans, 'Noto Sans Serif';
+  font-size: clamp(10vw, 15.5vw, 600vw);
   -webkit-writing-mode: vertical-rl;
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
   text-orientation: upright;
-  margin: 0 auto;
-  color: black;
+  color: #000000;
+  /* height: max-content */
 }
-.fname {
-  margin-bottom: -10vw;
-  /* bigger negatives go down */
-  margin-left: 1vw;
+.rtl-bodytext {
+  font-family: Noto Sans, 'Noto Sans Serif';
+  font-size: clamp(1rem, 3vw, 5rem);
+  text-align: justify;
+  color: #eddfdf;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  content: "";
+  display: inline-block;
+  padding-right: 2vw;
+  padding-left: 2vw;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
 }
-.fpith {
-  margin-bottom: -1vw;
-  margin-left: 1vw;
+.pos_r {
+  float: top-right;
 }
-.fbark {
-  margin-bottom: -9vw;
-  margin-left: 1vw;
-}
-.flilt {
-  margin-bottom: -4vw;
-  margin-left: 1vw;
-}
-/* NO .fsway, can add later */
-.fhere {
-  margin-bottom: -9vw;
-  margin-left: 1vw;
-}
-/* KEYFRAMES KEYFRAMES KEYFRAMES KEYFRAMES KEYFRAMES KEYFRAMES KEYFRAMES KEYFRAMES KEYFRAMES KEYFRAMES KEYFRAMES KEYFRAMES */
+/* <-- PATHS --> */
 .paths {
   -webkit-animation: paths 12s step-end infinite;
   animation: paths 12s step-end infinite;
