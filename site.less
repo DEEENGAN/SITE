@@ -28,49 +28,28 @@ body {
   padding-left: 1vw;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: clamp(10vw, 15.5vw, 600vw);
-  -webkit-writing-mode: vertical-lr;
-  -ms-writing-mode: tb-lr;
   writing-mode: vertical-lr;
   text-orientation: upright;
   color: #000000;
-  /* height: max-content */;
 }
 .firstcharacter-rtl {
-
   font-family: Noto Sans, 'Noto Sans Serif';
   font-size: clamp(10vw, 15.5vw, 600vw);
-  writing-mode: vertical-rl;
-  -webkit-writing-mode: vertical-rl;
-  -ms-writing-mode: tb-rl;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
   color: #000000;
-  /* height: max-content */;
 }
 .rtl-bodytext {
   font-family: Noto Sans, 'Noto Sans Serif';
   font-size: clamp(1rem, 3vw, 5rem);
-  text-align: justify;
   color: #eddfdf;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
-  content: "";
-  display: inline-block;
   padding-right: 2vw;
   padding-left: 2vw;
-  writing-mode: vertical-rl;
-  -webkit-writing-mode: vertical-rl;
-  -ms-writing-mode: tb-rl;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
 }
 
 .pos_r {
-  float: top-right;
-
+  text-orientation: upright;
+  writing-mode: vertical-rl;
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* <-- PATHS --> */
