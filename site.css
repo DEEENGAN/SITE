@@ -48,6 +48,7 @@ body {
   writing-mode: vertical-rl;
   display: flex;
   justify-content: flex-end;
+  width: fit-content;
 }
 /* <-- PATHS --> */
 .paths {
