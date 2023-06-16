@@ -36,6 +36,25 @@ body {
   font-size: clamp(10vw, 15.5vw, 600vw);
   color: #000000;
 }
+.firstcharacter-nothing {
+  float: left;
+  line-height: 18.75vw;
+  padding-right: 2.5vw;
+  padding-left: 1vw;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: clamp(10vw, 15.5vw, 600vw);
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  color: #eddfdf;
+}
+.body-text-link {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #000000;
+}
+.body-text-link-pink {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #eddfdf;
+}
 .rtl-bodytext {
   font-family: Noto Sans, 'Noto Sans Serif';
   font-size: clamp(1rem, 3vw, 5rem);
@@ -48,7 +67,6 @@ body {
   writing-mode: vertical-rl;
   display: flex;
   justify-content: flex-end;
-  width: fit-content;
 }
 /* <-- PATHS --> */
 .paths {
