@@ -18,22 +18,20 @@ body {
   hyphens: auto;
   content: "";
   display: inline-block;
-  padding-right: 2vw;
+  margin-right: 0vw;
   padding-left: 0vw;
 }
 .rtl-body-text {
   font-family: Noto Sans, 'Noto Sans Serif';
   font-size: clamp(1rem, 3vw, 5rem);
   color: #eddfdf;
-  padding-right: 0vw;
-  padding-left: 0vw;
 }
 .firstcharacter-nothing {
   float: right;
   display: flex;
   justify-content: flex-end;
   line-height: 12vw;
-  padding-left: 0vw;
+  padding-left: 4vw;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: clamp(10vw, 15.5vw, 600vw);
   writing-mode: vertical-rl;
