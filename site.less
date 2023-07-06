@@ -8,6 +8,8 @@ body {
   background: #000000;
 }
 
+/* so, look at the hierarchy of how the HTML elements are applied: also, close comments properly */
+
 .body_text {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: clamp(1rem, 3vw, 5rem);
@@ -21,63 +23,30 @@ body {
   content: "";
   display: inline-block;
   padding-right: 2vw;
-  padding-left: 2vw;
+  padding-left: 0vw;
 }
 
-.firstcharacter {
-  float: left;
-  line-height: 18.75vw;
-  padding-right: 2.5vw;
-  padding-left: 1vw;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: clamp(10vw, 15.5vw, 600vw);
-  writing-mode: vertical-lr;
-  text-orientation: upright;
-  color: #000000;
-}
-
-.firstcharacter-rtl {
+.rtl-body-text {
   font-family: Noto Sans, 'Noto Sans Serif';
-  font-size: clamp(10vw, 15.5vw, 600vw);
-  color: #000000;
+  font-size: clamp(1rem, 3vw, 5rem);
+  color: #eddfdf;
+  padding-right: 0vw;
+  padding-left: 0vw;
 }
 
 .firstcharacter-nothing {
-  float: left;
-  line-height: 18.75vw;
-  padding-right: 2.5vw;
-  padding-left: 1vw;
+  float: right;
+  display: flex;
+  justify-content: flex-end;
+  line-height: 12vw;
+  padding-left: 0vw;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: clamp(10vw, 15.5vw, 600vw);
-  writing-mode: vertical-lr;
+  writing-mode: vertical-rl;
   text-orientation: upright;
   color: #ff0054;
 }
 
-.body-text-link {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color: #000000;
-}
-
-.body-text-link-pink {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color: #eddfdf;
-}
-
-.rtl-bodytext {
-  font-family: Noto Sans, 'Noto Sans Serif';
-  font-size: clamp(1rem, 3vw, 5rem);
-  color: #eddfdf;
-  padding-right: 2vw;
-  padding-left: 2vw;
-}
-
-.pos_r {
-  text-orientation: upright;
-  writing-mode: vertical-rl;
-  display: flex;
-  justify-content: flex-end;
-}
 
 /* <-- PATHS --> */
 
