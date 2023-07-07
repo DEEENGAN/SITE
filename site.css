@@ -5,7 +5,7 @@ a {
 body {
   background: #000000;
 }
-/* so, look at the hierarchy of how the HTML elements are applied: also, close comments properly, line height and padding text of first character nothing controls the distance of the overlap of body and title*/
+/* so, look at the hierarchy of how the HTML elements are applied: also, close comments properly, line height and padding text of first character nothing controls the distance of the overlap of body and title */
 .body-text {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: clamp(1rem, 3vw, 5rem);
@@ -19,7 +19,7 @@ body {
   content: "";
   display: inline-block;
   margin-right: 0vw;
-  padding-left: 4vw;
+  padding-left: 6vw;
 }
 .firstcharacter-nothing {
   float: right;
